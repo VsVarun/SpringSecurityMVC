@@ -1,0 +1,5 @@
+Spring Security MVC Demo
+${AnsiColor.BRIGHT_RED}@Author 	: Nandha Kumar, Varun Chandresekar
+@Version	: ${application.version}
+Spring Boot	: ${spring-boot.formatted-version}
+Application	: ${application.title}

@@ -1,0 +1,15 @@
+.wrapper ul li .fas {
+  color: #004040;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+span:hover.sign-out {
+  transition: all 0.5s ease;
+}
+
+span:hover .fa-sign-out-alt {
+  color: #ff0000;
+  text-shadow: 0 0 15px #ff8080;
+  transition: all 0.5s ease;
+}

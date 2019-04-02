@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<properties>
+		<src.dir>src/main/java</src.dir>
+		<resources.dir>src/main/resources</resources.dir>
+		<webapp.dir>src/main/webapp</webapp.dir>
+		<target.jdk>1.8</target.jdk>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<build.number>1</build.number>
+		<vc.version>1.0.0.${build.number}-SNAPSHOT</vc.version>
+		<spring.boot.version>1.5.19.RELEASE</spring.boot.version>
+	</properties>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vc</groupId>
+	<artifactId>SpringSecurityMVC</artifactId>
+	<version>${vc.version}</version>
+	<packaging>pom</packaging>
+	<name>SpringSecurityMVC</name>
+
+	<modules>
+		<module>Common</module>
+		<module>Web</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<type>pom</type>
+				<version>${spring.boot.version}</version>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- Spring Boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
